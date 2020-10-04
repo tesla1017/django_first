@@ -7,4 +7,7 @@ class Post(models.Model):
     body = models.TextField()
 
     def __str__(self):
-        return self.title
+        return self.title #管理画面でTitleを表示させる。
+
+    def summary(self):
+        return self.body[:30]

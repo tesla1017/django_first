@@ -12,7 +12,11 @@
     {% for post in posts.all %} <!-- すべてのデータを読み込みpostに１つづつ格納 -->
 
      {{ post.title }}
-     {{ post.body }}
+     <br /><br />
+     {{ post.published }}
+     <br /><br />
+     {{ post.summary }}
+     <br /><br />
 
     {% endfor %}
   </body>
